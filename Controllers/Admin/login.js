@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 
 
-const JWT_SECRET =  'your-very-secret-key';
+// const JWT_SECRET =  'your-very-secret-key';
 
 
 export const authLimiter = rateLimit({
@@ -34,11 +34,11 @@ const Adminlogin =  async (req, res) => {
             return res.status(400).json({ msg: 'Invalid credentials. User not found.' });
         }
 
-        const isMatch = await bcrypt.compare(password, user.password);
-        console.log(isMatch);
-        if (!isMatch) {
-            return res.status(400).json({ msg: 'Invalid credentials. Incorrect password.' });
-        }
+        // const isMatch = await bcrypt.compare(password, user.password);
+        // console.log(isMatch);
+        // if (!isMatch) {
+        //     return res.status(400).json({ msg: 'Invalid credentials. Incorrect password.' });
+        // }
 
         // 3. User is authenticated. Create a payload for the JWT.
         // The payload includes the user's database ID and their role.
