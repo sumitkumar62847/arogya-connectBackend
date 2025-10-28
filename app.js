@@ -85,7 +85,7 @@ app.put('/appointments/doctor', submitDoctorNotes);
 
 // -------------
 
-app.post('/api/appointmentsbyComp', AppointmentByComponder);
+app.post('/appointmentsbyComp', AppointmentByComponder);
 
 // --------------
 
@@ -99,7 +99,7 @@ app.get('/appointments/today',todayAppiontemnt);
 
 app.get('/find-patient',findPatientByMobile);
 
-app.get('/api/patientById', FindPatientById);
+app.get('/patientById', FindPatientById);
 
 
 

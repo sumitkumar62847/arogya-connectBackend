@@ -3,12 +3,14 @@ import Patient from '../../models/patientModel.js';
 
 
 const FindPatientById =  async (req, res) => {
-     const {patientId } = req.query;
-    // console.log('cdscds');
+  console.log('cdscds');
+    const {patientId } = req.query;
+    console.log('cdscds');
 
   try {
+    
     const patient = await Patient.findById(patientId);
-
+    console.log(patient);
     if (!patient) {
       return res.status(404).json({ msg: 'Patient not found.' });
     }

@@ -31,7 +31,7 @@ const users = [
     // Compounders
     {
         userId: "777788889999", 
-        password: "compounderPass1",
+        password: "compounderPass1", 
         role: "Compounder",
         fullName: "Priya Patel",
         specialization: "Pharmaceutical Compounding",
